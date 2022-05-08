@@ -30,5 +30,36 @@ namespace Araç_Satış_Otomasyonu
             baglanti.Close();
             return tablo;
         }
+
+        public void Bos_Araçlar(ComboBox combo,string sorgu)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand(sorgu,baglanti);    
+            SqlDataReader read = komut.ExecuteReader(); 
+            while(read.Read())
+            {
+                combo.Items.Add(read["plaka"].ToString());
+            }
+
+            baglanti.Close();
+        }
+
+
+        //--------------------------------------------------------
+
+
+        public void TC_Ara(TextBox tc,TextBox adsoyad, TextBox telefon, string sorgu)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand(sorgu, baglanti);
+            SqlDataReader read = komut.ExecuteReader();
+            while (read.Read())
+            {
+                adsoyad.Text = read["adsoyad"].ToString();
+                telefon.Text = read["telefon"].ToString();
+            }
+
+            baglanti.Close();
+        }
     }
 }
