@@ -100,5 +100,10 @@ namespace Araç_Satış_Otomasyonu
         {
 
         }
+
+        private void Sericombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

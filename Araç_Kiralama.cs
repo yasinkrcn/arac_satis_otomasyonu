@@ -61,5 +61,44 @@ namespace Araç_Satış_Otomasyonu
 
             baglanti.Close();
         }
+
+
+
+        public void Ucret_Hesapla(ComboBox comboKiraSekli , TextBox ucret ,string sorgu)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand(sorgu, baglanti);
+            SqlDataReader read = komut.ExecuteReader();
+            while (read.Read())
+            {
+                if(comboKiraSekli.SelectedIndex == 0) ucret.Text = (int.Parse(read["kiraucreti"].ToString())*1).ToString();
+                if(comboKiraSekli.SelectedIndex == 1) ucret.Text = (int.Parse(read["kiraucreti"].ToString()) *0.75).ToString();
+                if(comboKiraSekli.SelectedIndex == 2) ucret.Text = (int.Parse(read["kiraucreti"].ToString()) *0.60).ToString();
+                
+               
+            }
+
+            baglanti.Close();
+        }
+
+
+
+
+        public void CombodanGetir(ComboBox araclar, TextBox marka, TextBox seri, TextBox yil, TextBox renk, string sorgu)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand(sorgu, baglanti);
+            SqlDataReader read = komut.ExecuteReader();
+            while (read.Read())
+            {
+                marka.Text = read["marka"].ToString();
+                seri.Text = read["seri"].ToString();
+                yil.Text = read["yil"].ToString();
+                renk.Text = read["renk"].ToString();
+                
+            }
+
+            baglanti.Close();
+        }
     }
 }

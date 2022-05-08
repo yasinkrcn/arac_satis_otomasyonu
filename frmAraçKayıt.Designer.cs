@@ -108,6 +108,7 @@
             this.Sericombo.Name = "Sericombo";
             this.Sericombo.Size = new System.Drawing.Size(165, 27);
             this.Sericombo.TabIndex = 6;
+            this.Sericombo.SelectedIndexChanged += new System.EventHandler(this.Sericombo_SelectedIndexChanged);
             // 
             // Yakitcombo
             // 
@@ -144,9 +145,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(35, 128);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 19);
+            this.label3.Size = new System.Drawing.Size(31, 19);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Seri No";
+            this.label3.Text = "Seri";
             // 
             // label4
             // 
