@@ -59,7 +59,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>879, 14</value>
+    <value>883, 67</value>
   </data>
   <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 140</value>
@@ -84,7 +84,7 @@
     <value>0</value>
   </data>
   <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>734, 14</value>
+    <value>738, 67</value>
   </data>
   <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 140</value>
@@ -108,7 +108,7 @@
     <value>1</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>589, 14</value>
+    <value>593, 67</value>
   </data>
   <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 140</value>
@@ -132,7 +132,7 @@
     <value>2</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>444, 14</value>
+    <value>448, 67</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 140</value>
@@ -156,7 +156,7 @@
     <value>3</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>299, 14</value>
+    <value>303, 67</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 140</value>
@@ -180,7 +180,7 @@
     <value>4</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 14</value>
+    <value>158, 67</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 140</value>
@@ -204,7 +204,7 @@
     <value>5</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 14</value>
+    <value>13, 67</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 140</value>
@@ -231,7 +231,7 @@
     <value>12, 28</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1034, 246</value>
+    <value>1034, 277</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -255,13 +255,13 @@
     <value>8, 19</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1161, 648</value>
+    <value>1066, 503</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Ana Sayfa</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
+    <value>frmAnaSayfa</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

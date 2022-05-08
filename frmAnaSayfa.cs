@@ -1,8 +1,8 @@
 namespace Araç_Satış_Otomasyonu
 {
-    public partial class Form1 : Form
+    public partial class frmAnaSayfa : Form
     {
-        public Form1()
+        public frmAnaSayfa()
         {
             InitializeComponent();
         }
@@ -48,6 +48,12 @@ namespace Araç_Satış_Otomasyonu
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            frmSatis aracsatislar = new frmSatis();
+            aracsatislar.ShowDialog();
         }
     }
 }

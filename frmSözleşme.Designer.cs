@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.txtTcAra = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.lblE_Yeri = new System.Windows.Forms.Label();
             this.txtEhliyetVerildigiYer = new System.Windows.Forms.TextBox();
             this.txtEhliyetTarihi = new System.Windows.Forms.TextBox();
             this.txtEhliyetNo = new System.Windows.Forms.TextBox();
-            this.txtTelNo = new System.Windows.Forms.TextBox();
             this.txtAdSoyad = new System.Windows.Forms.TextBox();
             this.txtTC = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblE_Tarihi = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -72,6 +72,10 @@
             this.btnSozlesmeEkle = new System.Windows.Forms.Button();
             this.btnSozlesmeGuncelle = new System.Windows.Forms.Button();
             this.btnAracTeslim = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtEkstra = new System.Windows.Forms.TextBox();
+            this.txtTelNo = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -82,108 +86,112 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.LimeGreen;
-            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.txtTelNo);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txtTcAra);
+            this.groupBox1.Controls.Add(this.label18);
+            this.groupBox1.Controls.Add(this.lblE_Yeri);
             this.groupBox1.Controls.Add(this.txtEhliyetVerildigiYer);
             this.groupBox1.Controls.Add(this.txtEhliyetTarihi);
             this.groupBox1.Controls.Add(this.txtEhliyetNo);
-            this.groupBox1.Controls.Add(this.txtTelNo);
             this.groupBox1.Controls.Add(this.txtAdSoyad);
             this.groupBox1.Controls.Add(this.txtTC);
-            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.lblE_Tarihi);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(305, 260);
+            this.groupBox1.Size = new System.Drawing.Size(305, 309);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Bilgileri";
             // 
-            // label6
+            // txtTcAra
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 220);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 19);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "E_Verildiği Yer";
+            this.txtTcAra.Location = new System.Drawing.Point(136, 36);
+            this.txtTcAra.Name = "txtTcAra";
+            this.txtTcAra.Size = new System.Drawing.Size(147, 26);
+            this.txtTcAra.TabIndex = 12;
+            this.txtTcAra.TextChanged += new System.EventHandler(this.txtTcAra_TextChanged);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label18.Location = new System.Drawing.Point(40, 38);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(64, 21);
+            this.label18.TabIndex = 11;
+            this.label18.Text = "TC ARA";
+            // 
+            // lblE_Yeri
+            // 
+            this.lblE_Yeri.AutoSize = true;
+            this.lblE_Yeri.Location = new System.Drawing.Point(16, 255);
+            this.lblE_Yeri.Name = "lblE_Yeri";
+            this.lblE_Yeri.Size = new System.Drawing.Size(93, 19);
+            this.lblE_Yeri.TabIndex = 3;
+            this.lblE_Yeri.Text = "E_Verildiği Yer";
             // 
             // txtEhliyetVerildigiYer
             // 
-            this.txtEhliyetVerildigiYer.Location = new System.Drawing.Point(137, 218);
+            this.txtEhliyetVerildigiYer.Location = new System.Drawing.Point(136, 253);
             this.txtEhliyetVerildigiYer.Name = "txtEhliyetVerildigiYer";
             this.txtEhliyetVerildigiYer.Size = new System.Drawing.Size(147, 26);
             this.txtEhliyetVerildigiYer.TabIndex = 10;
             // 
             // txtEhliyetTarihi
             // 
-            this.txtEhliyetTarihi.Location = new System.Drawing.Point(137, 181);
+            this.txtEhliyetTarihi.Location = new System.Drawing.Point(136, 216);
             this.txtEhliyetTarihi.Name = "txtEhliyetTarihi";
             this.txtEhliyetTarihi.Size = new System.Drawing.Size(147, 26);
             this.txtEhliyetTarihi.TabIndex = 9;
             // 
             // txtEhliyetNo
             // 
-            this.txtEhliyetNo.Location = new System.Drawing.Point(137, 144);
+            this.txtEhliyetNo.Location = new System.Drawing.Point(136, 179);
             this.txtEhliyetNo.Name = "txtEhliyetNo";
             this.txtEhliyetNo.Size = new System.Drawing.Size(147, 26);
             this.txtEhliyetNo.TabIndex = 8;
             // 
-            // txtTelNo
-            // 
-            this.txtTelNo.Location = new System.Drawing.Point(137, 107);
-            this.txtTelNo.Name = "txtTelNo";
-            this.txtTelNo.Size = new System.Drawing.Size(147, 26);
-            this.txtTelNo.TabIndex = 7;
-            // 
             // txtAdSoyad
             // 
-            this.txtAdSoyad.Location = new System.Drawing.Point(137, 70);
+            this.txtAdSoyad.Location = new System.Drawing.Point(136, 105);
             this.txtAdSoyad.Name = "txtAdSoyad";
             this.txtAdSoyad.Size = new System.Drawing.Size(147, 26);
             this.txtAdSoyad.TabIndex = 6;
             // 
             // txtTC
             // 
-            this.txtTC.Location = new System.Drawing.Point(137, 33);
+            this.txtTC.Location = new System.Drawing.Point(136, 68);
             this.txtTC.Name = "txtTC";
             this.txtTC.Size = new System.Drawing.Size(147, 26);
             this.txtTC.TabIndex = 5;
             this.txtTC.TextChanged += new System.EventHandler(this.txtTC_TextChanged);
             // 
-            // label5
+            // lblE_Tarihi
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 184);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 19);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Ehliyet Tarihi";
+            this.lblE_Tarihi.AutoSize = true;
+            this.lblE_Tarihi.Location = new System.Drawing.Point(20, 219);
+            this.lblE_Tarihi.Name = "lblE_Tarihi";
+            this.lblE_Tarihi.Size = new System.Drawing.Size(84, 19);
+            this.lblE_Tarihi.TabIndex = 4;
+            this.lblE_Tarihi.Text = "Ehliyet Tarihi";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 148);
+            this.label4.Location = new System.Drawing.Point(27, 183);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 19);
             this.label4.TabIndex = 3;
             this.label4.Text = "Ehliyet No";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 112);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 19);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Telefon";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 76);
+            this.label2.Location = new System.Drawing.Point(29, 111);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 19);
             this.label2.TabIndex = 1;
@@ -192,7 +200,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 40);
+            this.label1.Location = new System.Drawing.Point(50, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(24, 19);
             this.label1.TabIndex = 0;
@@ -461,12 +469,14 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 335);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 382);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 47;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1091, 297);
+            this.dataGridView1.Size = new System.Drawing.Size(1091, 321);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // btnSozlesmeEkle
             // 
@@ -488,6 +498,7 @@
             this.btnSozlesmeGuncelle.TabIndex = 25;
             this.btnSozlesmeGuncelle.Text = "Sözleşme Güncelle";
             this.btnSozlesmeGuncelle.UseVisualStyleBackColor = false;
+            this.btnSozlesmeGuncelle.Click += new System.EventHandler(this.btnSozlesmeGuncelle_Click);
             // 
             // btnAracTeslim
             // 
@@ -498,21 +509,57 @@
             this.btnAracTeslim.TabIndex = 3;
             this.btnAracTeslim.Text = "Araç Teslim";
             this.btnAracTeslim.UseVisualStyleBackColor = false;
+            this.btnAracTeslim.Click += new System.EventHandler(this.btnAracTeslim_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(795, 343);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(155, 19);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Alacak/Verecek Durumu";
+            // 
+            // txtEkstra
+            // 
+            this.txtEkstra.Location = new System.Drawing.Point(956, 340);
+            this.txtEkstra.Name = "txtEkstra";
+            this.txtEkstra.Size = new System.Drawing.Size(147, 26);
+            this.txtEkstra.TabIndex = 16;
+            this.txtEkstra.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtTelNo
+            // 
+            this.txtTelNo.Location = new System.Drawing.Point(136, 141);
+            this.txtTelNo.Name = "txtTelNo";
+            this.txtTelNo.Size = new System.Drawing.Size(147, 26);
+            this.txtTelNo.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(29, 147);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 19);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Telefon No";
             // 
             // frmSözleşme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1125, 644);
+            this.ClientSize = new System.Drawing.Size(1125, 715);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnSozlesmeGuncelle);
+            this.Controls.Add(this.txtEkstra);
             this.Controls.Add(this.btnAracTeslim);
             this.Controls.Add(this.btnSozlesmeEkle);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmSözleşme";
-            this.Text = "Sözleşme Sayfası";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.frmSözleşme_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -524,22 +571,21 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private GroupBox groupBox1;
-        private Label label6;
+        private Label lblE_Yeri;
         private TextBox txtEhliyetVerildigiYer;
         private TextBox txtEhliyetTarihi;
         private TextBox txtEhliyetNo;
-        private TextBox txtTelNo;
         private TextBox txtAdSoyad;
         private TextBox txtTC;
-        private Label label5;
+        private Label lblE_Tarihi;
         private Label label4;
-        private Label label3;
         private Label label2;
         private Label label1;
         private GroupBox groupBox2;
@@ -573,5 +619,11 @@
         private Button btnAracTeslim;
         private Button btnHesapla;
         private Button btnTemizle;
+        private TextBox txtTcAra;
+        private Label label18;
+        private Label label6;
+        private TextBox txtEkstra;
+        private TextBox txtTelNo;
+        private Label label3;
     }
 }

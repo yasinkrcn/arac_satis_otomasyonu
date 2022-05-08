@@ -1,6 +1,6 @@
 ﻿namespace Araç_Satış_Otomasyonu
 {
-    partial class Form1
+    partial class frmAnaSayfa
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAnaSayfa));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -55,9 +55,10 @@
             // 
             // button7
             // 
+            this.button7.BackColor = System.Drawing.Color.LightCoral;
             resources.ApplyResources(this.button7, "button7");
             this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
@@ -65,6 +66,7 @@
             resources.ApplyResources(this.button6, "button6");
             this.button6.Name = "button6";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -101,12 +103,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // frmAnaSayfa
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Name = "frmAnaSayfa";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
